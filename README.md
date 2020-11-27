@@ -1,6 +1,7 @@
 # Welcome to NyanDoggo.com!
 
 ## SomeRPG and the problems with cameras!
+(28. nov 2020)
 so i've been working on SomeRPG for a while now, it is a 3rd person Adventure RPG about
 collecting cool items, however, there is a slight problem, see i made a [video](https://youtu.be/zriUTg_Tk8U) about
 the cameras i used in the game, however, they dont necesarily work as well as i had hoped, so i've been spending
