@@ -1,14 +1,14 @@
 # Welcome to NyanDoggo.com!
 
 ## SomeRPG and the problems with cameras!
-###(28. nov 2020)
+### (28. nov 2020)
 so i've been working on SomeRPG for a while now, it is a 3rd person Adventure RPG about
 collecting cool items, however, there is a slight problem, see i made a [video](https://youtu.be/zriUTg_Tk8U) about
 the cameras i used in the game, however, they dont necesarily work as well as i had hoped, so i've been spending
 some time reworking the system. i am considering writing a post on what is going wrong here, im just kinda stuck
 it seems, but i'll figure it out during the week, you can expect a new video next week about this!
 
-###(30. nov 2020)
+### (30. nov 2020)
 those cameras? i havent done a video yet, but im considering it, strongly, maybe under the title
 "Video Game Cameras, REEEEEEEEEE!!!", or maybe i'll choose something else. so my problem was two-fold.
 let me first state: i am not a master at this, there might be a solution far simpler that i've come to ignore.
