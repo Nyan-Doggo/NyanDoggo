@@ -39,7 +39,7 @@ it to the player-modell until we start moving, so we will always begin to move t
 swap from the orbital to the follow-camera once we start moving,
 
 **the problem:**
-when transitioning from the orbital camera to the rotational camera, i dont want the transition to be linear, as in if im offset by one 
+when transitioning from the orbital camera to the following camera, i dont want the transition to be linear, as in if im offset by one 
 unit to the left of the character, and im moving towards a offset of one unit behind the character, then every point along that transition 
 should be one unit away from the player. a striaght line would "cut the corner" so to speak, and the center of this line would be closer to the player
 then the two outer points, we need a curve to follow here. a shape where each point is equal distance from the center. now that is kinda wonky to calculate with
