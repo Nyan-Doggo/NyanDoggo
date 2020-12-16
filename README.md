@@ -1,5 +1,12 @@
 # Welcome to NyanDoggo.com!
 
+## Restarting the project
+### (16. dec 2020)
+im restarting!, what does it mean? well, i've figured out that i want something else then what i've
+done so far. a lot of it is going to remain similar, in that the game is a rpg about colelcting awesome items.
+however, im redoing models and scenery, changing to a top-down camera, and rebuilding some of the gameplay
+that i had in place. i hope to show some cool videos of this after new-years!
+
 ## SomeRPG and the problems with cameras!
 ### (28. nov 2020)
 so i've been working on SomeRPG for a while now, it is a 3rd person Adventure RPG about
