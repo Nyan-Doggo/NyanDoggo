@@ -1,7 +1,6 @@
 /************************************ ELEMENT RULES ************************************/
 
 body {
-  background-color: royalblue;
   margin: 0 auto;
   text-align: center;
   font-family: "Roboto Mono", monospace;
@@ -53,13 +52,13 @@ a {
 }
 
 .top-container {
-  background-color: #fcf8e8;
+  background-color: #d4e2d4;
   margin: 0;
   padding: 90px 5% 0px 5%;
 }
 
 .mid-container {
-  background-color: #d4e2d4;
+  background-color: #fcf8e8;
   margin: 0;
   padding: 30px 5% 30px 5%;
 }
@@ -79,6 +78,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  height: 400px;
 }
 
 .profile-img {
@@ -109,13 +109,6 @@ a {
 }
 .BUTTON_SVT {
   background: #F05454;
-  background-image: -webkit-linear-gradient(top, #F05454, #B74343);
-  background-image: -moz-linear-gradient(top, #F05454, #B74343);
-  background-image: -ms-linear-gradient(top, #F05454, #B74343);
-  background-image: -o-linear-gradient(top, #F05454, #B74343);
-  background-image: -webkit-gradient(to bottom, #F05454, #B74343);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
   border-radius: 20px;
   height: 27px;
   line-height: 27px;
@@ -125,9 +118,7 @@ a {
   font-size: 40px;
   padding: 20px;
   margin-top: 30px;
-  -webkit-box-shadow: -5px 5px 40px 1px #000000;
-  -moz-box-shadow: -5px 5px 40px 1px #000000;
-  box-shadow: -5px 5px 40px 1px #000000;
+  box-shadow: -1px 1px 10px 1px #000000;
   text-shadow: 1px 1px 10px #4E1212;
   text-decoration: none;
   display: inline-block;
@@ -136,17 +127,10 @@ a {
 }
 
 .BUTTON_SVT:hover {
-  border: solid #FFFFFF 1px;
-  background: #F05454;
-  background-image: -webkit-linear-gradient(top, #F05454, #B74343);
-  background-image: -moz-linear-gradient(top, #F05454, #B74343);
-  background-image: -ms-linear-gradient(top, #F05454, #B74343);
-  background-image: -o-linear-gradient(top, #F05454, #B74343);
-  background-image: -webkit-gradient(to bottom, #F05454, #B74343);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  color: #F05454;
+  background: #FFFFFF;
   text-decoration: none;
+  text-shadow: none;
 }
 
 .contact-me{
@@ -175,13 +159,13 @@ a {
 }
 
 #cloud-1 {
-  right: 32%;
+  right: 20%;
   top: 80px;
 }
 
 #cloud-2 {
-  left: 32%;
-  top: 360px;
+  left: 25%;
+  bottom: 460px;
 }
 
 #skill-row-img-2 {
