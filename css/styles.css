@@ -44,6 +44,10 @@ a {
   text-decoration: none;
 }
 
+p{
+  line-height: 2;
+}
+
 /************************************ CLASS RULES ************************************/
 
 .profile{
@@ -99,7 +103,6 @@ a {
   width: 40%;
   margin: 100px auto;
   text-align: left;
-  line-height: 2;
   clear: both;
 }
 
