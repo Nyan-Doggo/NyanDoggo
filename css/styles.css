@@ -1,0 +1,189 @@
+/************************************ ELEMENT RULES ************************************/
+
+body {
+  background-color: royalblue;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+hr{
+  border-style: none;
+  border-top: 10px dotted;
+  width: 5%;
+  margin: 60px auto;
+  color: #aaaaaa;
+}
+
+h1 {
+  color: #f05454;
+  font-size: 5.62rem;
+  margin: 0px;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+h2 {
+  color: #f05454;
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
+}
+
+h3 {
+  color: #008891;
+  font-family: "DM Serif Display", serif;
+}
+
+a:hover {
+  color: white;
+  font-weight: 800;
+  background-color: #f05454;
+}
+
+a {
+  color: #008891;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/************************************ CLASS RULES ************************************/
+
+.profile{
+  width: 40%;
+  margin: auto;
+}
+
+.top-container {
+  background-color: #fcf8e8;
+  margin: 0;
+  padding: 90px 5% 0px 5%;
+}
+
+.mid-container {
+  background-color: #d4e2d4;
+  margin: 0;
+  padding: 30px 5% 30px 5%;
+}
+
+.bottom-container {
+  background-color: #ecb390;
+  margin: 0;
+  padding: 30px 5% 30px 5%;
+}
+
+.cloud-img {
+  position: absolute;
+  padding: 1%;
+}
+
+.mountain-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.skill-gif {
+  display: block;
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+
+.skill-row {
+  width: 40%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+  clear: both;
+}
+
+
+.footer-link{
+  margin: 0px 20px;
+}
+.BUTTON_SVT {
+  background: #F05454;
+  background-image: -webkit-linear-gradient(top, #F05454, #B74343);
+  background-image: -moz-linear-gradient(top, #F05454, #B74343);
+  background-image: -ms-linear-gradient(top, #F05454, #B74343);
+  background-image: -o-linear-gradient(top, #F05454, #B74343);
+  background-image: -webkit-gradient(to bottom, #F05454, #B74343);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  height: 27px;
+  line-height: 27px;
+  color: #FFFFFF;
+  font-family: "Sedgwick Ave", cursive;
+  width: 293px;
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 30px;
+  -webkit-box-shadow: -5px 5px 40px 1px #000000;
+  -moz-box-shadow: -5px 5px 40px 1px #000000;
+  box-shadow: -5px 5px 40px 1px #000000;
+  text-shadow: 1px 1px 10px #4E1212;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.BUTTON_SVT:hover {
+  border: solid #FFFFFF 1px;
+  background: #F05454;
+  background-image: -webkit-linear-gradient(top, #F05454, #B74343);
+  background-image: -moz-linear-gradient(top, #F05454, #B74343);
+  background-image: -ms-linear-gradient(top, #F05454, #B74343);
+  background-image: -o-linear-gradient(top, #F05454, #B74343);
+  background-image: -webkit-gradient(to bottom, #F05454, #B74343);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.contact-me{
+  width: 40%;
+  margin: auto;
+}
+/************************************ ID RULES ************************************/
+
+#introduction-text {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2;
+  width: 40%;
+}
+
+#title-sub-heading {
+  font-weight: normal;
+  margin: 0px;
+}
+
+#pro-text {
+  text-decoration: underline;
+}
+
+#cloud-1 {
+  right: 32%;
+  top: 80px;
+}
+
+#cloud-2 {
+  left: 32%;
+  top: 360px;
+}
+
+#skill-row-img-2 {
+  float: right;
+}
