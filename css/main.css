@@ -1,0 +1,29 @@
+/* some custome variables to make life easy */
+:root{
+  --color-l1: #fefefe;
+  --color-l2: #ddd;
+  --color-d1: #333;
+  --color-d2: #666;
+  --color-a1: #FAE1FF;
+  --color-a2: #E4CCEC;
+  --color-a3: #6791CF;
+  --color-a4: #85A6DD;
+  --color-a5: #CAC4E6;
+  --color-a6: #DE94F2;
+  --color-h1: #0C9AF2;
+  --color-h2: #0FB2F2;
+}
+
+/* asigning colors to the basic elements */
+a{
+  color: var(--color-h1);
+}
+a:visited{
+  color: var(--color-h2);
+}
+
+body{
+  padding: 2% 10%;
+  background-color: var(--color-d1);
+  color: var(--color-l1);
+}

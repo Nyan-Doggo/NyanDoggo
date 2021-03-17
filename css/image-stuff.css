@@ -1,0 +1,12 @@
+/* this is stuff related to getting the pfp to work, i guess*/
+.rounded-image{
+    border-radius: 50%;
+  }
+  
+  .profile-image{
+    height: 100%;
+  }
+  
+  .profile-image-container{
+    height: 10rem;
+  }

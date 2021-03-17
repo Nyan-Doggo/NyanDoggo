@@ -1,0 +1,41 @@
+@keyframes color-change{
+    0% {color: var(--color-a1);}
+    16% {color: var(--color-a2);}
+    33% {color: var(--color-a3);}
+    50% {color: var(--color-a4);}
+    66% {color: var(--color-a5);}
+    83% {color: var(--color-a6);}
+    100% {color: var(--color-a1);}
+
+}
+
+.name-color-change-1{
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: -5s;
+}
+.name-color-change-2{
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: -4s;
+}
+.name-color-change-3{
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: -3s;
+}
+.name-color-change-4{
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+}
+.name-color-change-5{
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
