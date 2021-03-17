@@ -23,7 +23,10 @@ a:visited{
 }
 
 body{
-  padding: 2% 10%;
   background-color: var(--color-d1);
   color: var(--color-l1);
+}
+
+section {
+  padding: 1% 10%;
 }

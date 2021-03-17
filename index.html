@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nyan</title>
-    <link rel="icon" type="image/png" href="head-transparent.png" />
-
+    <link rel="icon" type="image/png" href="images/head-transparent.png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -16,26 +22,90 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/text-animation.css" />
     <link rel="stylesheet" href="css/image-stuff.css" />
+    <link rel="stylesheet" href="css/paragraph-fomratting.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
   </head>
 
   <body>
-    <!-- INTRODUCTION -->
-    <div class="row mx-auto d-flex justify-content-center">
-      <div class="profile-image-container">
-        <img src="head-transparent.png" class="rounded-image profile-image" />
+    <!-- TOP MENU BAR THINGY -->
+    <section id="top-menu-bar" class="top-menu-bar">
+      <div class="row">
+        <div
+          class="col top-menu-socials-tab"
+          onmouseover="topMenuDisplaySocials()"
+          onmouseout="topMenuRemoveSocials()"
+        >
+          <span>Socials</span>
+          <div class="top-menu-socials-tab-links-list" style="display: none">
+            <div>
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/channel/UCJSZmbLX7AfLtouvXCySDow"
+                target="_blank"
+                class="top-menu-socials-tab-link"
+                >YouTube</a
+              >
+            </div>
+            <div>
+              <i class="fab fa-twitter-square"></i>
+              <a
+                href="https://twitter.com/NyanNyanYT"
+                target="_blank"
+                class="top-menu-socials-tab-link"
+                >Twitter</a
+              >
+            </div>
+            <div>
+              <i class="fab fa-twitch"></i>
+              <a
+                href="https://www.twitch.tv/nyan___nyan"
+                target="_blank"
+                class="top-menu-socials-tab-link"
+                >Twitch</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- add a new div or something after this to make more buttons -->
+        <!-- but before this line -->
       </div>
-      <h1 class="mt-5">
-        im <span class="name-color-change-1">N</span
-        ><span class="name-color-change-2">y</span
-        ><span class="name-color-change-3">a</span
-        ><span class="name-color-change-4">n</span
-        ><span class="name-color-change-5">!</span>
-      </h1>
-    </div>
+    </section>
+    <div class="menu-underline-shadow-thingy"></div>
 
-    <div class="text-center pt-2">
-      <p>ill add more to the site later</p>
-    </div>
+    <!-- INTRODUCTION -->
+    <section id="name-and-profile-picture">
+      <div class="row mx-auto d-flex justify-content-center">
+        <div class="profile-image-container">
+          <img
+            src="images/head-transparent.png"
+            class="rounded-image profile-image"
+          />
+        </div>
+        <h1 class="mt-5">
+          im <span class="name-color-change-1">N</span
+          ><span class="name-color-change-2">y</span
+          ><span class="name-color-change-3">a</span
+          ><span class="name-color-change-4">n</span
+          ><span class="name-color-change-5">!</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="quick-summary-about-me">
+      <div class="text-center pt-2">
+        <p class="single-centered-paragraph">
+          I am a creator! my 9-5 is as a sytems-developer within the Office365
+          enviroment; on my sparetime i program websites, like this one! i also
+          make video-games every now and then!
+        </p>
+        <p class="single-centered-paragraph">
+          Oh Right; Also, i run a YT-channel, stream stuff on twitch, i draw a
+          lot! and i run a discord-community for RPG'enthusiasts, where we play
+          games, watch movies and share pictures of ferrets!
+        </p>
+      </div>
+    </section>
 
     <!-- scripts -->
     <script
@@ -53,5 +123,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/topMenuFunctionality.js"></script>
   </body>
 </html>

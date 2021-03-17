@@ -1,0 +1,25 @@
+.top-menu-bar{
+    background-color: var(--color-a1);
+    color: var(--color-d1);
+    font-weight: 800;
+}
+
+.top-menu-bar div{
+    text-align: center;
+}
+
+.menu-underline-shadow-thingy{
+    height: 5px;
+    background-color: var(--color-d2);
+}
+
+.top-menu-socials-tab-link{
+    color: var(--color-h1);
+    line-height: 150%;
+}
+
+.top-menu-socials-tab-link:hover{
+    color: var(--color-h2);
+    margin: 20px 0px;
+    text-decoration-line: none;
+}
