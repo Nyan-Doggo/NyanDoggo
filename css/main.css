@@ -1,32 +1,38 @@
 /* some custome variables to make life easy */
-:root{
+:root {
   --color-l1: #fefefe;
   --color-l2: #ddd;
   --color-d1: #333;
   --color-d2: #666;
-  --color-a1: #FAE1FF;
-  --color-a2: #E4CCEC;
-  --color-a3: #6791CF;
-  --color-a4: #85A6DD;
-  --color-a5: #CAC4E6;
-  --color-a6: #DE94F2;
-  --color-h1: #0C9AF2;
-  --color-h2: #0FB2F2;
+  --color-a1: #fae1ff;
+  --color-a2: #e4ccec;
+  --color-a3: #6791cf;
+  --color-a4: #85a6dd;
+  --color-a5: #cac4e6;
+  --color-a6: #de94f2;
+  --color-h1: #0c9af2;
+  --color-h2: #0fb2f2;
 }
 
 /* asigning colors to the basic elements */
-a{
+a {
   color: var(--color-h1);
 }
-a:visited{
+a:visited {
   color: var(--color-h2);
 }
 
-body{
+body {
   background-color: var(--color-d1);
   color: var(--color-l1);
 }
 
 section {
   padding: 1% 10%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 1% 1%;
+  }
 }
