@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  padding: 1% 10%;
+  padding: 2% 10%;
 }
 
 hr {
@@ -46,6 +46,10 @@ footer a {
 }
 footer a:visited {
   color: var(--color-d2);
+}
+
+.row{
+margin: 0%;
 }
 
 @media screen and (max-width: 750px) {
