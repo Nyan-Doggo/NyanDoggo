@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nyan</title>
@@ -30,49 +31,11 @@
 
   <body>
     <!-- TOP MENU BAR THINGY -->
-    <section id="top-menu-bar" class="top-menu-bar">
-      <div class="row">
-        <div
-          class="col top-menu-socials-tab"
-          onmouseover="topMenuDisplaySocials()"
-          onmouseout="topMenuRemoveSocials()"
-        >
-          <span>Socials</span>
-          <div class="top-menu-socials-tab-links-list" style="display: none">
-            <div>
-              <i class="fab fa-youtube"></i>
-              <a
-                href="https://www.youtube.com/channel/UCJSZmbLX7AfLtouvXCySDow"
-                target="_blank"
-                class="top-menu-socials-tab-link"
-                >YouTube</a
-              >
-            </div>
-            <div>
-              <i class="fab fa-twitter-square"></i>
-              <a
-                href="https://twitter.com/NyanNyanYT"
-                target="_blank"
-                class="top-menu-socials-tab-link"
-                >Twitter</a
-              >
-            </div>
-            <div>
-              <i class="fab fa-twitch"></i>
-              <a
-                href="https://www.twitch.tv/nyan___nyan"
-                target="_blank"
-                class="top-menu-socials-tab-link"
-                >Twitch</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- add a new div or something after this to make more buttons -->
-        <!-- but before this line -->
-      </div>
-    </section>
-    <div class="menu-underline-shadow-thingy"></div>
+    <div id="top-menu-bar-id"></div>
+    <!-- this is now a snippet, so it loads from the snippets dir 
+      using jquerry loads(); called at the bottom cuz i needed a 
+      good way to deal with templates and i dont really know of 
+      anything better -->
 
     <!-- INTRODUCTION -->
     <section id="name-and-profile-picture">
@@ -178,6 +141,13 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <div id="footer-id"></div>
+    <!-- this is now a snippet, so it loads from the snippets dir 
+      using jquerry loads(); called at the bottom cuz i needed a 
+      good way to deal with templates and i dont really know of 
+      anything better -->
+
     <!-- scripts -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -194,40 +164,17 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
     <script src="js/topMenuFunctionality.js"></script>
+
+    <!-- LOAD SNIPPETS -->
+    <script>
+      $(function () {
+        $("#top-menu-bar-id").load("building-blocks/top-menu-bar.html");
+        $("#footer-id").load("building-blocks/footer.html");
+      });
+    </script>
+    <!-- this is the j1uerry, it fetches the html and puts 
+      it into the specified id place -->
+      
   </body>
-  <footer>
-    <div class="row py-3 text-center">
-      <div class="col">
-        <a href="https://hits.seeyoufarm.com"
-          ><img
-            src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnyandoggo.com&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
-        /></a>
-      </div>
-      <div class="col">
-        <i class="fab fa-youtube"></i>
-        <a
-          href="https://www.youtube.com/channel/UCJSZmbLX7AfLtouvXCySDow"
-          target="_blank"
-          class="top-menu-socials-tab-link"
-          >YouTube</a
-        ><span> - </span>
-        <i class="fab fa-twitter-square"></i>
-        <a
-          href="https://twitter.com/NyanNyanYT"
-          target="_blank"
-          class="top-menu-socials-tab-link"
-          >Twitter</a
-        ><span> - </span>
-        <i class="fab fa-twitch"></i>
-        <a
-          href="https://www.twitch.tv/nyan___nyan"
-          target="_blank"
-          class="top-menu-socials-tab-link"
-          >Twitch</a
-        >
-      </div>
-    </div>
-  </footer>
 </html>
