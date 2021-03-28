@@ -38,6 +38,7 @@ hr {
 
 footer{
   background-color: var(--color-a2);
+  color: var(--color-d1);
 }
 
 footer a {
