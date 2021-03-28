@@ -36,6 +36,17 @@ hr {
   background-color: var(--color-a1);
 }
 
+footer{
+  background-color: var(--color-a2);
+}
+
+footer a {
+  color: var(--color-d1);
+}
+footer a:visited {
+  color: var(--color-d2);
+}
+
 @media screen and (max-width: 750px) {
   section {
     padding: 1% 1%;
