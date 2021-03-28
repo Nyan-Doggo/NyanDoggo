@@ -3,7 +3,7 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .single-centered-paragraph {
         margin: 6% 5%;
     }
