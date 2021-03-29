@@ -31,6 +31,14 @@ section {
   padding: 1% 10%;
 }
 
+.code-snippet {
+  width: auto;
+  margin: 2rem 0rem;
+  padding: 0.5rem;
+  color: var(--color-a6);
+  background-color: var(--color-d2);
+}
+
 hr {
   color: var(--color-a1);
   background-color: var(--color-a1);

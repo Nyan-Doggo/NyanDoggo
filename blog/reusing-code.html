@@ -32,15 +32,166 @@
 
   <body>
     <!-- TOP MENU BAR THINGY -->
+
     <div id="top-menu-bar-id"></div>
     <!-- this is now a snippet, so it loads from the snippets dir 
       using jquerry loads(); called at the bottom cuz i needed a 
       good way to deal with templates and i dont really know of 
       anything better -->
 
-    <h1>
-        WORK IN PROGRESS
-    </h1>
+    <section>
+      <h1 class="single-centered-paragraph">REUSING CODE IN HTML</h1>
+      <hr />
+      <h3 class="single-centered-paragraph">The Problem</h3>
+      <p class="single-centered-paragraph">
+        the concept is simple, you have some code, for instance a segment for
+        the top menu-bar of every page, inclduding things like your social
+        links, your Home button and your blog. you paste this code into every
+        page you make, after all, you gotta write html for each page
+        individually, but then you want to change it, so you have to go throug
+        every page on your site and implement the same change. this work is
+        tedious, super boring and takes a long time once your project grows a
+        bit. so what can we do about it?
+      </p>
+      <br />
+      <h2 class="single-centered-paragraph">A possible fix</h2>
+      <p class="single-centered-paragraph">
+        one way to solve this is by re-using code. re-using code means that we
+        have a single source for the code, a single file, and then whenever we
+        need to use that code, we refer back to our single source, that way we
+        can update the source and see it take effect all over our site. this
+        sort of recycling is common in many forms of programing, and in all
+        kinds of work oustide computers as well, from art to industrial
+        mechanics, re-usability and work-reduction are essential for managing
+        large tasks, and a neat way to keep even small projects easy and
+        maintainable
+      </p>
+      <br />
+
+      <h2 class="single-centered-paragraph">How i did it in HTML and JS</h2>
+      <h3 class="single-centered-paragraph">The premise</h3>
+      <p class="single-centered-paragraph">
+        first off we need a example to work with, for this explenation to make
+        sense, so lets use this one here, say i have a website with a header, a
+        footer, and a body. the code for that might be stored in a file called
+        <strong><em>"index.html"</em></strong> and look something like this :
+        <br />
+      </p>
+
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="header"&gt<br />
+        &ltbutton&gtSocials&lt/button&gt<br />
+        &ltbutton&gthome&lt/button&gt<br />
+        &ltbutton&gtBlog&lt/button&gt<br />&lt/div&gt<br /><br />&ltdiv
+        id="content"&gt<br />
+        &lth1&gtthings i love about cheese&lt/h1&gt<br />
+        &ltp&gti love cheese&lt/p&gt<br />&lt/div&gt<br /><br />&ltdiv
+        id="footer"&gt<br />
+        &lta href="example.com"&gtMy twitter&lt/a&gt<br />
+        &ltp&gtplz follow my twitter&lt/p&gt<br />&lt/div&gt
+      </div>
+
+      <p class="single-centered-paragraph">
+        what we have here are three DIV tags, each of them for a part of the
+        site, a header with three buttons, a footer with a link and some text
+        about my twitter, and a body with the content of the page. now what we
+        want to do, is to seperate the header and footer into each their own
+        files, and then we want to refference those other files when we need to
+        get the code for the respective parts
+      </p>
+
+      <br />
+      <h3 class="single-centered-paragraph">Seperating the files</h3>
+      <p class="single-centered-paragraph">
+        Let us make 2 new files, one for the header and one for the footer, all
+        we have to do is copy the entire div for each of those parts into a
+        seperate HTML file, so <strong><em>"header.html"</em></strong> looks
+        like this :
+        <br />
+      </p>
+
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="header"&gt<br />
+        &ltbutton&gtSocials&lt/button&gt<br />
+        &ltbutton&gthome&lt/button&gt<br />
+        &ltbutton&gtBlog&lt/button&gt<br />&lt/div&gt<br />
+      </div>
+
+      <p class="single-centered-paragraph">
+        and then <strong><em>"footer.html"</em></strong> looks like this :
+      </p>
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="footer"&gt<br />
+        &lta href="example.com"&gtMy twitter&lt/a&gt<br />
+        &ltp&gtplz follow my twitter&lt/p&gt<br />&lt/div&gt
+      </div>
+
+      <br />
+      <h3 class="single-centered-paragraph">Loading files with JS</h3>
+      <p class="single-centered-paragraph">
+        now all we have to do is simple, our index-file looks like this after we
+        removed the header and footer <strong><em>"index.html"</em></strong> :
+        <br />
+      </p>
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="content"&gt<br />
+        &lth1&gtthings i love about cheese&lt/h1&gt<br />
+        &ltp&gti love cheese&lt/p&gt<br />&lt/div&gt
+      </div>
+      <p class="single-centered-paragraph">
+        at the top and bottom of the file we will add new divs that are
+        placeholders for the snippets we seperated into their own files by
+        placing an empty div with an apropriate ID in the place where we want
+        the code :
+        <br />
+      </p>
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="header"&gt&lt/div&gt<br /><br />&ltdiv id="content"&gt<br />
+        &lth1&gtthings i love about cheese&lt/h1&gt<br />
+        &ltp&gti love cheese&lt/p&gt<br />&lt/div&gt<br /><br />&ltdiv
+        id="footer"&gt&lt/div&gt
+      </div>
+      <p class="single-centered-paragraph">
+        now then, to add in our code when the site loads we will use a bit of
+        javascript, first we gotta load in jquerry, which we can get from the
+        jquerry CDN. after that we can use the script-tag to add load-commands
+        for each of our snipptes. the command looks like this :
+        <br />
+      </p>
+      <div class="code-snippet single-centered-paragraph">
+        $(function () {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; $("#id").load("file.html");<br />}
+      </div>
+      <p class="single-centered-paragraph">
+        what we are doing here is definig a functino where we want to get an
+        element with a specific ID, then replace that with html loaded from a
+        new file. the complete snippet looks something like this :
+        <br />
+      </p>
+      <div class="code-snippet single-centered-paragraph">
+        &ltdiv id="header"&gt&lt/div&gt<br /><br />&ltdiv id="content"&gt<br />&lth1&gtthings
+        i love about cheese&lt/h1&gt<br />&ltp&gti love cheese&lt/p&gt<br />&lt/div&gt<br /><br />&ltdiv
+        id="footer"&gt&lt/div&gt<br /><br />&ltscript&gt<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; $(function () {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        $("#header").load("header.html");<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        $("#footer").load("footer.html");<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; });<br />&lt/script&gt
+      </div>
+
+      <br />
+      <h3 class="single-centered-paragraph">Summary</h3>
+      <p class="single-centered-paragraph">
+        Reusing code and making modular code is in general adventagous as it
+        prevents us from having to repeat our writing. it provides a great way
+        to update your project in a managable way and lets you work on elements
+        of your site instead of single pages. modularity when implemented
+        correctly is flexible, and is in general not that hard to do right
+        either
+        <br />
+      </p>
+    </section>
 
     <!-- FOOTER -->
     <div id="footer-id"></div>
@@ -76,6 +227,5 @@
     </script>
     <!-- this is the j1uerry, it fetches the html and puts 
       it into the specified id place -->
-      
   </body>
 </html>

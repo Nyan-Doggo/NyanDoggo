@@ -1,2 +1,15 @@
-<test>
-</test>
+<div id="header"></div>
+
+<div id="content">
+<h1>things i love about cheese</h1>
+<p>i love cheese</p>
+</div>
+
+<div id="footer"></div>
+
+<script>
+      $(function () {
+        $("#top-menu-bar-id").load("building-blocks/top-menu-bar.html");
+        $("#footer-id").load("building-blocks/footer.html");
+      });
+</script>

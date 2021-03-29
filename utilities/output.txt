@@ -1,1 +1,1 @@
-&amplttest&ampgt<br/>&amplt/test&ampgt
+&ltdiv id="header"&gt&lt/div&gt<br/><br/>&ltdiv id="content"&gt<br/>&lth1&gtthings i love about cheese&lt/h1&gt<br/>&ltp&gti love cheese&lt/p&gt<br/>&lt/div&gt<br/><br/>&ltdiv id="footer"&gt&lt/div&gt<br/><br/>&ltscript&gt<br/>      $(function () {<br/>        $("#top-menu-bar-id").load("building-blocks/top-menu-bar.html");<br/>        $("#footer-id").load("building-blocks/footer.html");<br/>      });<br/>&lt/script&gt
