@@ -36,9 +36,14 @@ hr {
   background-color: var(--color-a1);
 }
 
-footer{
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: var(--color-a2);
   color: var(--color-d1);
+  font-weight: 800;
 }
 
 footer a {
@@ -48,8 +53,8 @@ footer a:visited {
   color: var(--color-d2);
 }
 
-.row{
-margin: 0%;
+.row {
+  margin: 0%;
 }
 
 @media screen and (max-width: 750px) {

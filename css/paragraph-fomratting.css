@@ -3,6 +3,11 @@
     text-align: justify;
 }
 
+.about-me-paragraph-in-col{
+    margin: 1% 20% 1% 5%;
+    text-align: justify;
+}
+
 @media screen and (max-width: 750px) {
     .single-centered-paragraph {
         margin: 6% 5%;
