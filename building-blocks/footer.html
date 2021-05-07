@@ -39,4 +39,24 @@
       >
     </div>
   </div>
+
+  <script>
+    function getIP(json) {
+      var today = new Date();
+      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+      fetch("https://api.airtable.com/v0/appcBYTOaXeZskhSH/Table%201", {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer keyhDRuD4wmfBz81S",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          records: [{ fields: { IP: json.ip, Time: time } }],
+        }),
+      });
+    };
+  </script>
+  <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
 </footer>
