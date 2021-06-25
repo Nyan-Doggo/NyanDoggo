@@ -22,6 +22,10 @@ a:visited {
   color: var(--color-h2);
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 body {
   background-color: var(--color-d1);
   color: var(--color-l1);

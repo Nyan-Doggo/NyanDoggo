@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/top-menu.css" />
     <link rel="stylesheet" href="css/nft-cards.css" />
     <link rel="stylesheet" href="css/youtube-vids.css" />
+    <link rel="stylesheet" href="css/social-link.css" />
   </head>
 
   <body>
@@ -36,6 +37,9 @@
       using jquerry loads(); called at the bottom cuz i needed a 
       good way to deal with templates and i dont really know of 
       anything better -->
+
+    <!-- social buttons-->
+    <Div id="social-buttons-id"></Div>
 
     <!-- INTRODUCTION -->
     <div class="text-center pt-5">
@@ -60,7 +64,7 @@
         </div>
       </section>
 
-      <!-- ABOUT ME -->
+      <!-- INTRODUCTION :: ABOUT ME -->
       <section class="col-lg-8 col-md-6" id="quick-summary-about-me">
         <div class="text-center pt-2">
           <p class="about-me-paragraph-in-col">
@@ -78,7 +82,7 @@
       </section>
     </div>
 
-    <!-- CONTENT -->
+    <!-- Latest Videos -->
     <section>
       <div class="text-center">
         <hr />
@@ -98,7 +102,7 @@
         <div class="col-lg-4 my-3 text-center">
           <iframe
             class="youtube-embed-video"
-            src="https://www.youtube.com/embed/cctXgitrtaw"
+            src="https://www.youtube.com/embed/a29kWyow8ms"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -114,34 +118,6 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- NFT STORE -->
-    <section>
-      <hr />
-      <div class="text-center">
-        <h1>NFT'S FOR SALE</h1>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 nft-card-background">
-          <h2>After death comes spring</h2>
-          <a
-            href="https://rarible.com/token/0x60f80121c31a0d46b5279700f9df786054aa5ee5:533124:0x1eb79357b5a37cc3dec543a4ac27c117adc82116"
-          >
-            <img
-              src="https://ipfs.rarible.com/ipfs/QmcPfGcV7LeRyVcmd2y8u5835HG7uR3phSdhFafRxgn66S/image.png"
-              style="width: 100%"
-            />
-          </a>
-          <p>
-            a full-res 8k image, made in the spring of 2021. this piece was for
-            me a interesting excercise in shadows and conveying 3 dimensions.
-            from a symbolic standpoint im quite happy with how the piece turned
-            out, you can buy this over on rarible if you want to. just clik the
-            picture and it will take you to the store
-          </p>
         </div>
       </div>
     </section>
@@ -176,9 +152,10 @@
       $(function () {
         $("#top-menu-bar-id").load("building-blocks/top-menu-bar.html");
         $("#footer-id").load("building-blocks/footer.html");
+        $("#social-buttons-id").load("building-blocks/social-buttons.html");
       });
     </script>
-    <!-- this is the j1uerry, it fetches the html and puts 
+    <!-- this is the jquerry, it fetches the html and puts 
       it into the specified id place -->
   </body>
 </html>

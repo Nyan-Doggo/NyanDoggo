@@ -1,0 +1,98 @@
+.social-link-button {
+  background-color: var(--color-a1);
+  height: 4rem;
+}
+
+.social-link-button:hover {
+  box-shadow: 5px 10px var(--color-a6);
+  height: 4rem;
+}
+
+.social-link-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 0.7rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-d1);
+}
+
+.social-link-text:visited {
+  font-weight: bold;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-d2);
+}
+
+/* .social-link-text:hover {
+  font-weight: bold;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-d1);
+} */
+
+/* instagram */
+.social-link-button-instagram {
+    background-color: var(--color-l1);
+    height: 4rem;
+}
+.social-link-text-instagram {
+  color: rgb(251, 57, 88);
+  background: -webkit-linear-gradient(
+    120deg,
+    rgba(251, 57, 88, 1) 0%,
+    rgba(255, 200, 56, 1) 30%,
+    rgba(109, 201, 147, 1) 50%,
+    rgba(69, 142, 255, 1) 60%,
+    rgba(222, 209, 193, 1) 70%,
+    rgba(155, 105, 84, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* youtube */
+.social-link-button-youtube {
+    background-color: rgb(251, 57, 88);
+    height: 4rem;
+}
+.social-link-text-youtube {
+  color: rgb(251, 251, 251);
+}
+/* discord */
+.social-link-button-discord {
+    background-color: #fff;
+    height: 4rem;
+}
+.social-link-text-discord {
+  color: #5865F2;
+}
+
+/* twitter */
+.social-link-button-twitter {
+    background-color: #1DA1F2;
+    height: 4rem;
+}
+.social-link-text-twitter {
+  color: #fff;
+}
+
+/* donate */
+.social-link-button-donate {
+    background-color: #80c0a3;
+    height: 4rem;
+}
+.social-link-text-donate {
+  color: #fff;
+}
+
+/* twitch */
+.social-link-button-twitch {
+    background-color: #9146ff;
+    height: 4rem;
+}
+.social-link-text-twitch {
+  color: #fff;
+}
